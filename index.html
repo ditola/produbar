@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Electron App</title>
+  </head>
+  <body>
+    <h1>Electron App</h1>
+    <script>
+      const { ipcRenderer } = require('electron')
+
+      ipcRenderer.on('timer', (event, arg) => {
+        const [program, time] = arg.split(':')
+        if (program === 'timer') {
+          const minutes = parseInt(time.replace('min', ''))
+          console.log(`Starting ${program} for ${minutes} minutes`)
+          // TODO: Start the Windows Clock timer for the specified time
+        }
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "produbar",
+  "version": "1.0.0",
+  "description": "first time i'm using npm init",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ditola/produbar.git"
+  },
+  "keywords": [
+    "produbar"
+  ],
+  "author": "Diego Torres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ditola/produbar/issues"
+  },
+  "homepage": "https://github.com/ditola/produbar#readme"
+}
